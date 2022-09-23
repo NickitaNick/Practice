@@ -7,3 +7,15 @@ while ($i <=30) {
     $i++;
 }
 
+echo "<br>";
+
+$sum = 0;
+$i = 1;
+$j = 1;
+do {
+    $sum = $sum + $i / $j++;
+    $i += 3;
+    var_dump($sum);
+} while ($sum < 10);
+--$j;
+echo "Quantity of numbers: $j";
